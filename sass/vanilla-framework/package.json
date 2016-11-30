@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      "vanilla-framework",
+      "/var/www/html/drupal/sites/all/themes/vanilla"
+    ]
+  ],
+  "_from": "vanilla-framework@latest",
+  "_id": "vanilla-framework@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/vanilla-framework",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/vanilla-framework-1.0.1.tgz_1476100540673_0.9282520490232855"
+  },
+  "_npmUser": {
+    "email": "ubuntudesign-jenkins@robinwinslow.co.uk",
+    "name": "ubuntudesign-jenkins"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "vanilla-framework",
+    "raw": "vanilla-framework",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vanilla-framework/-/vanilla-framework-1.0.1.tgz",
+  "_shasum": "b8ed9c0e9b42c6219c4d0dbbfd1ce53a5c8b6eb3",
+  "_shrinkwrap": null,
+  "_spec": "vanilla-framework",
+  "_where": "/var/www/html/drupal/sites/all/themes/vanilla",
+  "author": {
+    "email": "webteam@canonical.com",
+    "name": "Canonical Webteam",
+    "url": "http://design.canonical.com/team"
+  },
+  "bugs": {
+    "email": "webteam@canonical.com",
+    "url": "http://github.com/ubuntudesign/vanilla-framework/issues"
+  },
+  "dependencies": {},
+  "description": "A simple, extendable CSS framework.",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "es6-promise": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-cache": "0.4.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-notify": "2.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.2",
+    "gulp-sass-lint": "1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "3.0.7",
+    "wrench": "^1.5.9"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "b8ed9c0e9b42c6219c4d0dbbfd1ce53a5c8b6eb3",
+    "tarball": "https://registry.npmjs.org/vanilla-framework/-/vanilla-framework-1.0.1.tgz"
+  },
+  "gitHead": "81a4e57d3cd49062a039410683255c2a12b1e263",
+  "homepage": "http://ubuntudesign.github.io/vanilla-framework/",
+  "keywords": [
+    "CSS",
+    "SASS",
+    "SCSS",
+    "framework",
+    "mixin",
+    "module",
+    "ubuntu",
+    "vanilla"
+  ],
+  "license": "LGPL-3.0",
+  "maintainers": [
+    {
+      "name": "0atman",
+      "email": "tris@blackgateresearch.com"
+    },
+    {
+      "name": "anthonydillon",
+      "email": "me@anthonydillon.com"
+    },
+    {
+      "name": "barrymcgee",
+      "email": "barry.mcgee@canonical.com"
+    },
+    {
+      "name": "nottrobin",
+      "email": "robin@robinwinslow.co.uk"
+    },
+    {
+      "name": "richmccartney",
+      "email": "richard@mccartney.io"
+    },
+    {
+      "name": "ubuntudesign-jenkins",
+      "email": "ubuntudesign-jenkins@robinwinslow.co.uk"
+    }
+  ],
+  "name": "vanilla-framework",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubuntudesign/vanilla-framework.git"
+  },
+  "scripts": {
+    "clean": "rm -r build; rm -r node_modules"
+  },
+  "version": "1.0.1"
+}
