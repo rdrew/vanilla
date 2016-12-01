@@ -22,7 +22,8 @@
 ) {
   background-color: $button-background-color;
   border-color: $button-border-color;
-  border-radius: .125rem;
+  /*border-radius: .125rem;*/
+  border-radius: 6px;
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;

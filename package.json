@@ -7,11 +7,14 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.18.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-watch": "^4.3.3",
+    "node-sass-globbing": "0.0.23",
     "vanilla-framework": "^1.0.1"
   }
 }
