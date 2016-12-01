@@ -1,2 +1,7 @@
 /*$color-brand: #ffffff;*/
 /*$color-positive:         #333;*/
+div.messages {
+	&.error { @extend .p-notification--negative; }
+	&.warning { @extend .p-notification--warning; }
+	&.status { @extend .p-notification--positive; }
+}

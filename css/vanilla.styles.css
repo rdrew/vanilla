@@ -1,12 +1,13 @@
 /*$color-brand: #ffffff;*/
 /*$color-positive:         #333;*/
+/*$font-base-family:       '"Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' !default;*/
 input[type='text'], input[type='date'], input[type='datetime'], input[type='datatime-local'], input[type='month'], input[type='time'], input[type='week'], input[type='color'], input[type='number'], input[type='search'], input[type='password'], input[type='email'], input[type='url'], input[type='tel'], select, textarea {
   appearance: textfield;
   background-color: #fff;
   border: 1px solid #cdcdcd;
   border-radius: .125rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-weight: 300;
   outline: none;
@@ -29,17 +30,17 @@ input[type='text'], input[type='date'], input[type='datetime'], input[type='data
     color: #666;
     opacity: 1; }
   input.has-error[type='text'], input.has-error[type='date'], input.has-error[type='datetime'], input.has-error[type='datatime-local'], input.has-error[type='month'], input.has-error[type='time'], input.has-error[type='week'], input.has-error[type='color'], input.has-error[type='number'], input.has-error[type='search'], input.has-error[type='password'], input.has-error[type='email'], input.has-error[type='url'], input.has-error[type='tel'], select.has-error, textarea.has-error {
-    border: 1px solid #d73024; }
+    border: 1px solid #8c2004; }
     input.has-error[type='text']:focus, input.has-error[type='date']:focus, input.has-error[type='datetime']:focus, input.has-error[type='datatime-local']:focus, input.has-error[type='month']:focus, input.has-error[type='time']:focus, input.has-error[type='week']:focus, input.has-error[type='color']:focus, input.has-error[type='number']:focus, input.has-error[type='search']:focus, input.has-error[type='password']:focus, input.has-error[type='email']:focus, input.has-error[type='url']:focus, input.has-error[type='tel']:focus, select.has-error:focus, textarea.has-error:focus {
-      border: 1px solid #d73024; }
+      border: 1px solid #8c2004; }
   input.has-warning[type='text'], input.has-warning[type='date'], input.has-warning[type='datetime'], input.has-warning[type='datatime-local'], input.has-warning[type='month'], input.has-warning[type='time'], input.has-warning[type='week'], input.has-warning[type='color'], input.has-warning[type='number'], input.has-warning[type='search'], input.has-warning[type='password'], input.has-warning[type='email'], input.has-warning[type='url'], input.has-warning[type='tel'], select.has-warning, textarea.has-warning {
-    border: 1px solid #f99b11; }
+    border: 1px solid #FBB040; }
     input.has-warning[type='text']:focus, input.has-warning[type='date']:focus, input.has-warning[type='datetime']:focus, input.has-warning[type='datatime-local']:focus, input.has-warning[type='month']:focus, input.has-warning[type='time']:focus, input.has-warning[type='week']:focus, input.has-warning[type='color']:focus, input.has-warning[type='number']:focus, input.has-warning[type='search']:focus, input.has-warning[type='password']:focus, input.has-warning[type='email']:focus, input.has-warning[type='url']:focus, input.has-warning[type='tel']:focus, select.has-warning:focus, textarea.has-warning:focus {
-      border: 1px solid #f99b11; }
+      border: 1px solid #FBB040; }
   input.has-success[type='text'], input.has-success[type='date'], input.has-success[type='datetime'], input.has-success[type='datatime-local'], input.has-success[type='month'], input.has-success[type='time'], input.has-success[type='week'], input.has-success[type='color'], input.has-success[type='number'], input.has-success[type='search'], input.has-success[type='password'], input.has-success[type='email'], input.has-success[type='url'], input.has-success[type='tel'], select.has-success, textarea.has-success {
-    border: 1px solid #0f8420; }
+    border: 1px solid #5C8727; }
     input.has-success[type='text']:focus, input.has-success[type='date']:focus, input.has-success[type='datetime']:focus, input.has-success[type='datatime-local']:focus, input.has-success[type='month']:focus, input.has-success[type='time']:focus, input.has-success[type='week']:focus, input.has-success[type='color']:focus, input.has-success[type='number']:focus, input.has-success[type='search']:focus, input.has-success[type='password']:focus, input.has-success[type='email']:focus, input.has-success[type='url']:focus, input.has-success[type='tel']:focus, select.has-success:focus, textarea.has-success:focus {
-      border: 1px solid #0f8420; }
+      border: 1px solid #5C8727; }
   input.has-information[type='text'], input.has-information[type='date'], input.has-information[type='datetime'], input.has-information[type='datatime-local'], input.has-information[type='month'], input.has-information[type='time'], input.has-information[type='week'], input.has-information[type='color'], input.has-information[type='number'], input.has-information[type='search'], input.has-information[type='password'], input.has-information[type='email'], input.has-information[type='url'], input.has-information[type='tel'], select.has-information, textarea.has-information {
     border: 1px solid #007aa6; }
     input.has-information[type='text']:focus, input.has-information[type='date']:focus, input.has-information[type='datetime']:focus, input.has-information[type='datatime-local']:focus, input.has-information[type='month']:focus, input.has-information[type='time']:focus, input.has-information[type='week']:focus, input.has-information[type='color']:focus, input.has-information[type='number']:focus, input.has-information[type='search']:focus, input.has-information[type='password']:focus, input.has-information[type='email']:focus, input.has-information[type='url']:focus, input.has-information[type='tel']:focus, select.has-information:focus, textarea.has-information:focus {
@@ -473,7 +474,7 @@ img {
   .p-inline-list__item:last-of-type, .p-inline-list__item .last-item {
     margin-right: 0; }
 
-.p-notification, .p-notification--positive, .p-notification--warning, .p-notification--negative {
+.p-notification, .p-notification--positive, div.messages.status, .p-notification--warning, div.messages.warning, .p-notification--negative, div.messages.error {
   background-color: #fff;
   border: 0;
   border-color: #666;
@@ -917,7 +918,7 @@ button {
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -950,11 +951,11 @@ label {
   cursor: pointer;
   display: block; }
   label.has-error {
-    color: #d73024; }
+    color: #8c2004; }
   label.has-warning {
-    color: #f99b11; }
+    color: #FBB040; }
   label.has-success {
-    color: #0f8420; }
+    color: #5C8727; }
   label.has-information {
     color: #007aa6; }
 
@@ -983,12 +984,12 @@ input[type='checkbox'], input[type='radio'] {
     width: 100%; }
 
 input[type='submit'] {
-  background-color: #0f8420;
+  background-color: #5C8727;
   border: 0;
   color: #fff;
   padding: .75rem 1.5rem; }
   input[type='submit']:hover {
-    background-color: #05280a;
+    background-color: #263810;
     cursor: pointer; }
 
 select {
@@ -1171,40 +1172,25 @@ tbody th {
   text-align: left; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  src: url("https://assets.ubuntu.com/v1/50afa266-ubuntu-l-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/0194407b-ubuntu-l-webfont.woff") format("woff"); }
+  font-family: "et-book";
+  src: url("../fonts/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("../fonts/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../fonts/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://assets.ubuntu.com/v1/1cbafee5-ubuntu-r-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/81863185-ubuntu-r-webfont.woff") format("woff"); }
+  font-family: "et-book";
+  src: url("../fonts/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("../fonts/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../fonts/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../fonts/et-book/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic; }
 
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 300;
-  src: url("https://assets.ubuntu.com/v1/abb07502-ubuntu-li-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/65fc9630-ubuntu-li-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 400;
-  src: url("https://assets.ubuntu.com/v1/fca66073-ubuntu-ri-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/f0898c72-ubuntu-ri-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 300;
-  src: url("https://assets.ubuntu.com/v1/871f7456-ubuntumono-r-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/8df3f408-ubuntumono-r-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://assets.ubuntu.com/v1/871f7456-ubuntumono-r-webfont.woff2") format("woff2"), url("https://assets.ubuntu.com/v1/8df3f408-ubuntumono-r-webfont.woff") format("woff"); }
+  font-family: "et-book";
+  src: url("../fonts/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("../fonts/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../fonts/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 * {
   -moz-osx-font-smoothing: grayscale;
@@ -1218,8 +1204,9 @@ html {
       font-size: 16px; } }
 
 body {
+  background: #FBFBFB;
   color: #333;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-weight: 300;
   line-height: 1.6; }
   @media screen and (min-width: 768px) {
@@ -1232,7 +1219,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-weight: 300;
   margin-bottom: 1.2rem;
   margin-top: 0; }
@@ -1251,14 +1238,19 @@ p {
   margin-top: 0; }
   @media screen and (min-width: 768px) {
     p {
-      margin-bottom: 1.5rem;
-      margin-top: 0; } }
+      line-height: 2rem;
+      margin-top: 1.4rem;
+      margin-bottom: 1.4rem;
+      padding-right: 0;
+      vertical-align: baseline;
+      /*         margin-bottom: 1.5rem;*/
+      /*margin-top: 0;*/ } }
 
 button,
 input,
 select,
 textarea {
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  font-family: "et-book"; }
 
 h1 {
   font-size: 2.134rem;
@@ -1441,7 +1433,7 @@ sub {
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -1480,7 +1472,7 @@ sub {
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -1519,7 +1511,7 @@ sub {
   color: #cccccc;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -1548,8 +1540,8 @@ sub {
       width: auto; } }
 
 .p-button--positive {
-  background-color: #0f8420;
-  border-color: #0f8420;
+  background-color: #5C8727;
+  border-color: #5C8727;
   /*border-radius: .125rem;*/
   border-radius: 6px;
   border-style: solid;
@@ -1558,7 +1550,7 @@ sub {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -1573,22 +1565,22 @@ sub {
   .p-button--positive:visited {
     color: #fff; }
   .p-button--positive:active, .p-button--positive:focus, .p-button--positive:hover {
-    background-color: #0a5615;
-    border-color: #0a5615;
+    background-color: #415f1c;
+    border-color: #415f1c;
     text-decoration: none; }
   .p-button--positive:disabled, .p-button--positive.is--disabled {
     cursor: not-allowed;
     opacity: .5; }
     .p-button--positive:disabled:active, .p-button--positive:disabled:focus, .p-button--positive:disabled:hover, .p-button--positive.is--disabled:active, .p-button--positive.is--disabled:focus, .p-button--positive.is--disabled:hover {
-      background-color: #0f8420;
-      border-color: #0f8420; }
+      background-color: #5C8727;
+      border-color: #5C8727; }
   @media only screen and (min-width: 768px) {
     .p-button--positive {
       width: auto; } }
 
 .p-button--negative {
-  background-color: #d73024;
-  border-color: #d73024;
+  background-color: #8c2004;
+  border-color: #8c2004;
   /*border-radius: .125rem;*/
   border-radius: 6px;
   border-style: solid;
@@ -1597,7 +1589,7 @@ sub {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -1612,15 +1604,15 @@ sub {
   .p-button--negative:visited {
     color: #fff; }
   .p-button--negative:active, .p-button--negative:focus, .p-button--negative:hover {
-    background-color: #ab261d;
-    border-color: #ab261d;
+    background-color: #5a1503;
+    border-color: #5a1503;
     text-decoration: none; }
   .p-button--negative:disabled, .p-button--negative.is--disabled {
     cursor: not-allowed;
     opacity: .5; }
     .p-button--negative:disabled:active, .p-button--negative:disabled:focus, .p-button--negative:disabled:hover, .p-button--negative.is--disabled:active, .p-button--negative.is--disabled:focus, .p-button--negative.is--disabled:hover {
-      background-color: #d73024;
-      border-color: #d73024; }
+      background-color: #8c2004;
+      border-color: #8c2004; }
   @media only screen and (min-width: 768px) {
     .p-button--negative {
       width: auto; } }
@@ -1636,7 +1628,7 @@ sub {
   color: #333;
   cursor: pointer;
   display: inline-block;
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "et-book";
   font-size: 1rem;
   font-smoothing: subpixel-antialiased;
   font-weight: 300;
@@ -2048,22 +2040,22 @@ sub {
   border-bottom: 0;
   margin-left: .3125rem; }
 
-.p-notification--positive {
-  border-color: #0f8420; }
-  .p-notification--positive .p-notification__response {
-    background-image: url("data:image/svg+xml,%3Csvg width='17px' height='17px' viewBox='0 0 17 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='notification-success' transform='translate(1.000000, 1.000000)'%3E%3Cg id='Page-3---colours'%3E%3Cg id='Notifications---single'%3E%3Cg id='Group'%3E%3Cg id='ICON'%3E%3Ccircle id='circle6710' stroke='%230f8420' stroke-width='1.5' fill='%230f8420' cx='7.2500086' cy='7.2500086' r='7.2500086'%3E%3C/circle%3E%3Cpolygon id='path6712' fill='%23fff' points='11.0502986 4.1734486 10.9843986 4.2311486 6.2496486 8.3783686 3.4740786 5.9974286 2.6350186 6.9463086 6.2503386 10.7500186 11.7500086 4.9627786 11.0502986 4.1734886'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.p-notification--positive, div.messages.status {
+  border-color: #5C8727; }
+  .p-notification--positive .p-notification__response, div.messages.status .p-notification__response {
+    background-image: url("data:image/svg+xml,%3Csvg width='17px' height='17px' viewBox='0 0 17 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='notification-success' transform='translate(1.000000, 1.000000)'%3E%3Cg id='Page-3---colours'%3E%3Cg id='Notifications---single'%3E%3Cg id='Group'%3E%3Cg id='ICON'%3E%3Ccircle id='circle6710' stroke='%235C8727' stroke-width='1.5' fill='%235C8727' cx='7.2500086' cy='7.2500086' r='7.2500086'%3E%3C/circle%3E%3Cpolygon id='path6712' fill='%23fff' points='11.0502986 4.1734486 10.9843986 4.2311486 6.2496486 8.3783686 3.4740786 5.9974286 2.6350186 6.9463086 6.2503386 10.7500186 11.7500086 4.9627786 11.0502986 4.1734886'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     padding-left: 1.5rem; }
 
-.p-notification--warning {
-  border-color: #f99b11; }
-  .p-notification--warning .p-notification__response {
-    background-image: url("data:image/svg+xml,%3Csvg width='17px' height='17px' viewBox='0 0 17 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='notification-warning' transform='translate(1.000000, 1.000000)'%3E%3Cg id='Page-3---colours'%3E%3Cg id='Notifications---single'%3E%3Cg id='Group'%3E%3Cg id='ICON'%3E%3Ccircle id='circle5432' stroke='%23f99b11' stroke-width='1.5' fill='%23f99b11' cx='7.2500086' cy='7.2500086' r='7.2500086'%3E%3C/circle%3E%3Cpath d='M6.2500086,3.2500086 L6.2500086,8.2500086 L8.2500086,8.2500086 L8.2500086,3.2500086 L6.2500086,3.2500086 L6.2500086,3.2500086 L6.2500086,3.2500086 Z M6.2500086,9.2500086 L6.2500086,11.2500086 L8.2500086,11.2500086 L8.2500086,9.2500086 L6.2500086,9.2500086 L6.2500086,9.2500086 L6.2500086,9.2500086 Z' id='rect5434' fill='%23fff'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.p-notification--warning, div.messages.warning {
+  border-color: #FBB040; }
+  .p-notification--warning .p-notification__response, div.messages.warning .p-notification__response {
+    background-image: url("data:image/svg+xml,%3Csvg width='17px' height='17px' viewBox='0 0 17 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='notification-warning' transform='translate(1.000000, 1.000000)'%3E%3Cg id='Page-3---colours'%3E%3Cg id='Notifications---single'%3E%3Cg id='Group'%3E%3Cg id='ICON'%3E%3Ccircle id='circle5432' stroke='%23FBB040' stroke-width='1.5' fill='%23FBB040' cx='7.2500086' cy='7.2500086' r='7.2500086'%3E%3C/circle%3E%3Cpath d='M6.2500086,3.2500086 L6.2500086,8.2500086 L8.2500086,8.2500086 L8.2500086,3.2500086 L6.2500086,3.2500086 L6.2500086,3.2500086 L6.2500086,3.2500086 Z M6.2500086,9.2500086 L6.2500086,11.2500086 L8.2500086,11.2500086 L8.2500086,9.2500086 L6.2500086,9.2500086 L6.2500086,9.2500086 L6.2500086,9.2500086 Z' id='rect5434' fill='%23fff'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     padding-left: 1.5rem; }
 
-.p-notification--negative {
-  border-color: #d73024; }
-  .p-notification--negative .p-notification__response {
-    background-image: url("data:image/svg+xml,%3Csvg width='16px' height='17px' viewBox='0 0 16 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-3---colours' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Notifications---single' transform='translate(-215.000000, -271.000000)'%3E%3Cg id='Group' transform='translate(205.000000, 254.000000)'%3E%3Cg id='ICON' transform='translate(10.000000, 17.000000)'%3E%3Crect id='rect6415' x='0' y='0.36218' width='16' height='16'%3E%3C/rect%3E%3Ccircle id='circle6417' stroke='%23d73024' stroke-width='1.5' fill='%23d73024' cx='8' cy='8.36218' r='7.2500086'%3E%3C/circle%3E%3Cpath d='M5.00001,5.36218 L11.00001,11.36218' id='path6479-8' stroke='%23fff' stroke-width='1.5'%3E%3C/path%3E%3Cpath d='M11.00001,5.36218 L5.00001,11.36218' id='path6481-8' stroke='%23fff' stroke-width='1.5'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.p-notification--negative, div.messages.error {
+  border-color: #8c2004; }
+  .p-notification--negative .p-notification__response, div.messages.error .p-notification__response {
+    background-image: url("data:image/svg+xml,%3Csvg width='16px' height='17px' viewBox='0 0 16 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-3---colours' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Notifications---single' transform='translate(-215.000000, -271.000000)'%3E%3Cg id='Group' transform='translate(205.000000, 254.000000)'%3E%3Cg id='ICON' transform='translate(10.000000, 17.000000)'%3E%3Crect id='rect6415' x='0' y='0.36218' width='16' height='16'%3E%3C/rect%3E%3Ccircle id='circle6417' stroke='%238c2004' stroke-width='1.5' fill='%238c2004' cx='8' cy='8.36218' r='7.2500086'%3E%3C/circle%3E%3Cpath d='M5.00001,5.36218 L11.00001,11.36218' id='path6479-8' stroke='%23fff' stroke-width='1.5'%3E%3C/path%3E%3Cpath d='M11.00001,5.36218 L5.00001,11.36218' id='path6481-8' stroke='%23fff' stroke-width='1.5'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     padding-left: 1.5rem; }
 
 .p-pull-quote > p:first-of-type::before, .p-pull-quote > p:last-of-type::after {
