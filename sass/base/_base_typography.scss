@@ -1,6 +1,7 @@
 // Typographic element styles
 
 @mixin vf-b-typography {
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
 	@if str-index($font-base-family, "et-book") {
 		@font-face {
 			font-family: "et-book";

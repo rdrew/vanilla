@@ -22,7 +22,7 @@ sass_config = {
 gulp.task('browser-sync', function() {
     browserSync.init({
         //injectChanges: true,
-        proxy: "mywebproject.local:8888"
+        proxy: "localhost/drupal"
     });
     gulp.watch("./sass/**/*.scss", ['sass:dev']).on('change', browserSync.reload);
 });
