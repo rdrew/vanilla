@@ -1,5 +1,52 @@
 (function ($) {
 
+  Drupal.behaviors.bookmark_modals = {
+    attach: function (context, settings) {
+      $('ul.field-collection-view-links a', context).once('foo', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).colorbox();
+      });    
+      $('ul.action-links.action-links-field-collection-add a', context).once('foo', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).colorbox();
+      });    
+    }
+  }
+  Drupal.behaviors.collection_view_buttons = {
+    attach: function (context, settings) {
+      // By using the 'context' variable we make sure that our code only runs on
+      // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
+      // we don't run the same piece of code for an HTML snippet that we already
+      // processed previously. By using .once('foo') all processed elements will
+      // get tagged with a 'foo-processed' class, causing all future invocations
+      // of this behavior to ignore them.
+      $('.islandora-basic-collection-display-switch .islandora-view-list', context).once('foo', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).empty().append( '<i class="fa fa-list" aria-hidden="true"></i>' );
+      });
+      $('.islandora-basic-collection-display-switch .islandora-view-grid', context).once('foo', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).empty().append( '<i class="fa fa-th" aria-hidden="true"></i>' );
+      });
+      $('.pager__item--first', context).once('collection_view_buttons', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).prepend( '<i class="fa fa-angle-double-left" aria-hidden="true"></i>' );
+      });
+      $('.pager__item--previous', context).once('collection_view_buttons', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).prepend( '<i class="fa fa-angle-left" aria-hidden="true"></i>' );
+      });
+      $('.pager__item--next', context).once('collection_view_buttons', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).append( '<i class="fa fa-angle-right" aria-hidden="true"></i>' );
+      });
+      $('.pager__item--last', context).once('collection_view_buttons', function () {
+        // Now, we are invoking the previously declared theme function using two
+        $(this).append( '<i class="fa fa-angle-double-right" aria-hidden="true"></i>' );
+      });
+    }
+  }
+
   /**
    * The recommended way for producing HTML markup through JavaScript is to write
    * theming functions. These are similiar to the theming functions that you might
@@ -10,7 +57,7 @@
    * In most cases, there is no good reason to NOT wrap your markup producing
    * JavaScript in a theme function.
    */
-  Drupal.theme.prototype.vanillaExampleButton = function (path, title) {
+  Drupal.theme.prototype.islandarchivesExampleButton = function (path, title) {
     // Create an anchor element with jQuery.
     return $('<a href="' + path + '" title="' + title + '">' + title + '</a>');
   };
@@ -38,7 +85,7 @@
    *   Drupal.settings directly you should use this because of potential
    *   modifications made by the Ajax callback that also produced 'context'.
    */
-  Drupal.behaviors.vanillaExampleBehavior = {
+  Drupal.behaviors.islandarchivesExampleBehavior = {
     attach: function (context, settings) {
       // By using the 'context' variable we make sure that our code only runs on
       // the relevant HTML. Furthermore, by using jQuery.once() we make sure that
@@ -49,7 +96,7 @@
       $('.some-selector', context).once('foo', function () {
         // Now, we are invoking the previously declared theme function using two
         // settings as arguments.
-        var $anchor = Drupal.theme('vanillaExampleButton', settings.myExampleLinkPath, settings.myExampleLinkTitle);
+        var $anchor = Drupal.theme('islandarchivesExampleButton', settings.myExampleLinkPath, settings.myExampleLinkTitle);
 
         // The anchor is then appended to the current element.
         $anchor.appendTo(this);
