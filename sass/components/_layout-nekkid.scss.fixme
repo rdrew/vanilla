@@ -1,0 +1,165 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.l-header {
+	padding-top: $small-spacing;
+}
+//body {
+	//padding-top: $base-spacing;
+//}
+
+.site-branding__name {}
+
+/*******************************************************************************
+ * hero.layout.scss
+ *
+ * Styles for the Hero layout.
+ ******************************************************************************/
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+@import "../libraries/neat/app/assets/stylesheets/neat";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*";
+
+.l-constrained {
+	width: 95%;
+	margin: 0 auto;
+
+	@include clearfix;
+}
+.l-region--navigation { 
+	margin-bottom: 1em;
+	@extend .l-constrained;
+	nav {
+
+
+	}
+}/* Header */
+.l-region--header {
+	padding: $base-spacing 0;
+
+	.block {
+		float: right;
+	}
+}
+
+/* Content Area */
+.l-highlighted-wrapper {
+	padding: $base-spacing 0;
+}
+
+.l-region--highlighted {
+	@extend .l-constrained;
+}
+
+.l-region--help {
+	margin-bottom: $base-spacing;
+}
+
+.l-main {
+	margin-top: 2 * $base-spacing;
+	margin-bottom: 2 * $base-spacing;
+}
+
+/* Sidebars */
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+	padding: $base-spacing;
+}
+
+/* Footer */
+.l-footer-wrapper {
+	padding: $base-spacing 0;
+}
+
+.l-region--footer {
+	@extend .l-constrained;
+}
+
+@include media($medium-screen) {
+	.l-constrained {
+		width: 90%;
+	}
+
+	/* Header */
+	.l-branding {
+		@include span-columns(6);
+	}
+
+	//.l-region--navigation {
+		//@include span-columns(6);
+	//}
+
+	.l-region--header {
+		@include span-columns(6);
+
+		@include omega;
+	}
+
+	/* Sidebars */
+	.has-two-sidebars,
+	.has-one-sidebar {
+		.l-content {
+			@include span-columns(8);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span-columns(4);
+
+			clear: right;
+		}
+	}
+}
+
+
+@include media($large-screen) {
+	.l-constrained {
+		width: 80%;
+	}
+
+	/* Sidebars */
+	.has-one-sidebar {
+		.l-content {
+			@include span-columns(8);
+		}
+
+		.l-region--sidebar-first {
+			@include span-columns(4);
+
+			@include omega();
+			clear: none;
+		}
+	}
+
+	.has-two-sidebars {
+		.l-content {
+			@include span-columns(6);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span-columns(3);
+
+			clear: none;
+		}
+
+		.l-region--sidebar-second {
+			@include span-columns(3);
+		}
+	}
+}

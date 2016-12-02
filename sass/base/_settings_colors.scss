@@ -1,0 +1,36 @@
+// Global color settings
+
+$color-transparent:      transparent !default;
+
+$color-brand:            #333 !default;
+
+$color-x-light:          #fff !default;
+$color-light:            #f7f7f7 !default;
+$color-mid-light:        #cdcdcd !default;
+$color-mid-dark:         #666 !default;
+$color-dark:             #333 !default;
+$color-x-dark:           #000 !default;
+
+
+$off-white: #FBFBFB;
+$green: #5C8727;
+$red: #8c2004;
+$light-green: rgb(231, 237, 224);
+$yellow: #FBB040;
+$light-yellow: rgb(255, 210, 154);
+$color-negative:         $red !default;
+$color-warning:          $yellow !default;
+$color-positive:         $green !default;
+$color-information:      #007aa6 !default;
+
+$color-input-shadow:     rgba($color-x-dark, .12) !default;
+
+// for _patterns_grid-list.scss
+$grid-border-style:      1px dotted $color-mid-light !default;
+
+$states: (
+  error: $color-negative,
+  warning: $color-warning,
+  success: $color-positive,
+  information: $color-information
+);
