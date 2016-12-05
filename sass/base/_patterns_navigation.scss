@@ -19,7 +19,8 @@
       }
     }
 
-    &__link {
+    &__link, a {
+		color:$color-x-light;
 
       &:hover {
         text-decoration: underline;
@@ -72,6 +73,7 @@
       & > a {
         // For when this class is applied to something that contains <a>s, e.g.:
         // <li class="p-navigation__list"><a></a></li>
+		color: #fff;
         border-bottom: 0;
       }
 

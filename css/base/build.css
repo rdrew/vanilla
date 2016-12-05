@@ -1066,18 +1066,18 @@ pre {
   text-shadow: none; }
 
 a {
-  border-bottom: 1px solid currentColor;
-  color: inherit;
   font-weight: 400;
-  text-decoration: none;
-  transition: border-color .2s; }
+  text-decoration: none; }
   a:focus {
     outline: thin dotted #cdcdcd; }
   a:hover {
-    border-bottom-color: #cdcdcd;
+    border-bottom: 1px solid currentColor;
+    color: inherit;
+    transition: border-color .2s;
+    /*border-bottom-color: $color-mid-light;*/
     cursor: pointer; }
   a:visited {
-    color: #666; }
+    /*color: $color-mid-dark;*/ }
 
 ol,
 ul {
@@ -1235,17 +1235,17 @@ p, ol, ul, dl {
   font-size: 1.4rem; }
 
 p {
+  margin: 0 0 .5rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
   margin-bottom: 1.2rem;
-  margin-top: 0; }
+  padding-right: 0;
+  vertical-align: baseline; }
   @media screen and (min-width: 768px) {
     p {
       line-height: 2rem;
       margin-top: 1.4rem;
-      margin-bottom: 1.4rem;
-      padding-right: 0;
-      vertical-align: baseline;
-      /*         margin-bottom: 1.5rem;*/
-      /*margin-top: 0;*/ } }
+      margin-bottom: 1.4rem; } }
 
 button,
 input,
@@ -1358,6 +1358,13 @@ ul + h3 {
     pre + h3,
     ul + h3 {
       margin-top: 1.6rem; } }
+
+a {
+  color: #8c2004;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: shade(#8c2004, 25%); }
 
 pre {
   background-color: #333;
@@ -1517,14 +1524,14 @@ sub {
       width: auto; } }
 
 .p-button--brand {
-  background-color: #333;
-  border-color: #333;
+  background-color: #8c2004;
+  border-color: #8c2004;
   /*border-radius: .125rem;*/
   border-radius: 6px;
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
-  color: #cccccc;
+  color: #73dffb;
   cursor: pointer;
   display: inline-block;
   font-family: "et-book";
@@ -1540,17 +1547,17 @@ sub {
   transition: background-color .2s;
   width: 100%; }
   .p-button--brand:visited {
-    color: #cccccc; }
+    color: #73dffb; }
   .p-button--brand:active, .p-button--brand:focus, .p-button--brand:hover {
-    background-color: #1a1a1a;
-    border-color: #1a1a1a;
+    background-color: #5a1503;
+    border-color: #5a1503;
     text-decoration: none; }
   .p-button--brand:disabled, .p-button--brand.is--disabled {
     cursor: not-allowed;
     opacity: .5; }
     .p-button--brand:disabled:active, .p-button--brand:disabled:focus, .p-button--brand:disabled:hover, .p-button--brand.is--disabled:active, .p-button--brand.is--disabled:focus, .p-button--brand.is--disabled:hover {
-      background-color: #333;
-      border-color: #333; }
+      background-color: #8c2004;
+      border-color: #8c2004; }
   @media only screen and (min-width: 768px) {
     .p-button--brand {
       width: auto; } }
@@ -1844,7 +1851,7 @@ sub {
     border-bottom: 0; }
 
 .p-navigation {
-  background-color: #333;
+  background-color: #8c2004;
   color: #fff;
   position: relative;
   width: 100%; }
@@ -1854,8 +1861,10 @@ sub {
       display: flex; } }
   .p-navigation__toggle--open:visited, .p-navigation__toggle--close:visited, .p-navigation__link:visited {
     color: #fff; }
-  .p-navigation__link:hover {
-    text-decoration: underline; }
+  .p-navigation__link, .p-navigation a {
+    color: #fff; }
+    .p-navigation__link:hover, .p-navigation a:hover {
+      text-decoration: underline; }
   .p-navigation:target .p-navigation__toggle--open {
     display: none; }
   .p-navigation__toggle--close {
@@ -1884,6 +1893,7 @@ sub {
     border-bottom: 0;
     display: block; }
     .p-navigation__link > a {
+      color: #fff;
       border-bottom: 0; }
     .p-navigation__link:last-child {
       margin-bottom: 0; }
