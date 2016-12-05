@@ -30,7 +30,6 @@ body {
 //@import "compass";
 //@import "breakpoint";
 //@import "singularitygs";
-@import "../libraries/neat/app/assets/stylesheets/neat";
 
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*";
@@ -90,7 +89,7 @@ body {
 	@extend .l-constrained;
 }
 
-@include media($medium-screen) {
+@include media($breakpoint-medium) {
 	.l-constrained {
 		width: 90%;
 	}
@@ -127,7 +126,7 @@ body {
 }
 
 
-@include media($large-screen) {
+@include media($breakpoint-large) {
 	.l-constrained {
 		width: 80%;
 	}

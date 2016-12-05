@@ -1,4 +1,5 @@
 /*$font-base-family:       '"Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' !default;*/
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 input[type='text'], input[type='date'], input[type='datetime'], input[type='datatime-local'], input[type='month'], input[type='time'], input[type='week'], input[type='color'], input[type='number'], input[type='search'], input[type='password'], input[type='email'], input[type='url'], input[type='tel'], select, textarea {
   appearance: textfield;
   background-color: #fff;
@@ -1037,7 +1038,7 @@ form div > * {
 code,
 samp,
 kbd {
-  font-family: "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
+  font-family: "Ubuntu Mono", Consolas, Monaco, Co urier, monospace;
   text-align: left; }
 
 pre,
@@ -1196,17 +1197,16 @@ tbody th {
   font-smoothing: subpixel-antialiased; }
 
 html {
-  font-size: calc(16px * .9375); }
+  font-size: calc(14px * .9375); }
   @media screen and (min-width: 768px) {
     html {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 body {
-  background: #FBFBFB;
+  background: #fffef2 !important;
   color: #333;
   font-family: "et-book";
-  font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.5; }
   @media screen and (min-width: 768px) {
     body {
       line-height: 1.5; } }
@@ -1231,6 +1231,9 @@ h6 {
       margin-bottom: 1.5rem;
       margin-top: 0; } }
 
+p, ol, ul, dl {
+  font-size: 1.4rem; }
+
 p {
   margin-bottom: 1.2rem;
   margin-top: 0; }
@@ -1251,32 +1254,47 @@ textarea {
   font-family: "et-book"; }
 
 h1 {
-  font-size: 2.134rem;
-  line-height: 1.125; }
+  font-size: 2.4rem;
+  line-height: .7;
+  margin-top: .3rem;
+  margin-bottom: 1.25rem; }
   @media only screen and (min-width: 768px) {
     h1 {
-      font-size: 2.5rem;
-      line-height: 1.2; } }
+      font-size: 2.7rem;
+      line-height: .75;
+      margin-top: .35rem;
+      margin-bottom: 1.4rem; } }
   @media only screen and (min-width: 1030px) {
     h1 {
-      font-size: 3rem;
-      line-height: 1.25; } }
+      font-size: 3.2rem;
+      line-height: 1;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem; } }
 
 h2 {
+  font-style: italic;
+  font-weight: 400;
   font-size: 1.734rem;
-  line-height: 1.154; }
+  margin-bottom: .4rem;
+  margin-top: .9rem;
+  line-height: .7; }
   @media only screen and (min-width: 768px) {
     h2 {
       font-size: 2rem;
-      line-height: 1.25; } }
+      margin-top: 2rem;
+      margin-bottom: .45rem;
+      line-height: .75; } }
   @media only screen and (min-width: 1030px) {
     h2 {
       font-size: 2.25rem;
-      line-height: 1.167; } }
+      margin-top: 2.1rem;
+      margin-bottom: .5rem;
+      line-height: 1; } }
 
 h3 {
   font-size: 1.534rem;
-  line-height: 1.305; }
+  line-height: 1.305;
+  margin-top: 2rem; }
   @media only screen and (min-width: 768px) {
     h3 {
       font-size: 1.625rem;
@@ -1698,7 +1716,7 @@ sub {
   background-color: transparent;
   border: 0;
   color: #666;
-  font-family: "Ubuntu Mono", Consolas, Monaco, Courier, monospace;
+  font-family: "Ubuntu Mono", Consolas, Monaco, Co urier, monospace;
   font-size: 1em;
   font-weight: 300;
   padding: .7em 1em;

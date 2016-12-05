@@ -16,6 +16,8 @@ sass_config = {
         //'node_modules/breakpoint-sass/stylesheets/',
         //'node_modules/singularitygs/stylesheets/',
         //'node_modules/compass-mixins/lib/'
+        'node_modules/bourbon/app/assets/stylesheets/',
+        'node_modules/bourbon-neat/app/assets/stylesheets/'
     ]
 };
 

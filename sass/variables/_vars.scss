@@ -1,4 +1,7 @@
 /*$color-brand: #ffffff;*/
+$base-spacing : "1rem";
+$small-spacing : $base-spacing/2;
+
 /*$color-positive:         #333;*/
 div.messages {
 	&.error { @extend .p-notification--negative; }

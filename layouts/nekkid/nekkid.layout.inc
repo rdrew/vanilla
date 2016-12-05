@@ -16,5 +16,5 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/nekkid/nekkid.layout.css
+;stylesheets[all][] = css/layouts/nekkid/nekkid.layout.css
 ;stylesheets[all][] = css/layouts/nekkid/nekkid.layout.no-query.css

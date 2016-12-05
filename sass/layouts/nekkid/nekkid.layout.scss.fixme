@@ -1,115 +1,167 @@
+$base-spacing : "1rem";
+$small-spacing : $base-spacing/2;
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.l-header {
+	padding-top: $small-spacing;
+}
+//body {
+	//padding-top: $base-spacing;
+//}
+
+.site-branding__name {}
+
 /*******************************************************************************
  * hero.layout.scss
  *
  * Styles for the Hero layout.
  ******************************************************************************/
-@import "compass";
-@import "breakpoint";
-@import "singularitygs";
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "../libraries/neat/app/assets/stylesheets/neat";
 
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*";
 
 .l-constrained {
-  width: 95%;
-  margin: 0 auto;
-  @include pie-clearfix;
+	width: 95%;
+	margin: 0 auto;
+
+	@include clearfix;
 }
+.l-region--navigation { 
+	margin-bottom: 1em;
+	@extend .l-constrained;
+	nav {
 
-/* Header */
+
+	}
+}/* Header */
 .l-region--header {
-  padding: $vert-spacing-unit 0;
+	padding: $base-spacing 0;
 
-  .block {
-    float: right;
-  }
+	.block {
+		float: right;
+	}
 }
 
 /* Content Area */
 .l-highlighted-wrapper {
-  padding: $vert-spacing-unit 0;
+	padding: $base-spacing 0;
 }
+
 .l-region--highlighted {
-  @extend .l-constrained;
+	@extend .l-constrained;
 }
+
 .l-region--help {
-  margin-bottom: $vert-spacing-unit;
+	margin-bottom: $base-spacing;
 }
+
 .l-main {
-  margin-top: 2 * $vert-spacing-unit;
-  margin-bottom: 2 * $vert-spacing-unit;
+	margin-top: 2 * $base-spacing;
+	margin-bottom: 2 * $base-spacing;
 }
 
 /* Sidebars */
 .l-region--sidebar-first,
 .l-region--sidebar-second {
-  padding: $vert-spacing-unit $horz-spacing-unit;
+	padding: $base-spacing;
 }
 
 /* Footer */
 .l-footer-wrapper {
-  padding: $vert-spacing-unit 0;
+	padding: $base-spacing 0;
 }
+
 .l-region--footer {
-  @extend .l-constrained;
+	@extend .l-constrained;
 }
 
-@include breakpoint($tab, true) {
-  .l-constrained {
-    width: 90%;
-  }
+@include media($medium-screen) {
+	.l-constrained {
+		width: 90%;
+	}
 
-  /* Header */
-  .l-branding {
-    @include grid-span(3, 1);
-  }
-  .l-region--navigation {
-    @include grid-span(6, 4);
-  }
-  .l-region--header {
-    @include grid-span(3, 10);
-  }
+	/* Header */
+	.l-branding {
+		@include span-columns(6);
+	}
 
-  /* Sidebars */
-  .has-two-sidebars,
-  .has-one-sidebar {
-    .l-content {
-      @include grid-span(8, 1);
-    }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include grid-span(4, 9);
-      clear: right;
-    }
-  }
+	//.l-region--navigation {
+		//@include span-columns(6);
+	//}
+
+	.l-region--header {
+		@include span-columns(6);
+
+		@include omega;
+	}
+
+	/* Sidebars */
+	.has-two-sidebars,
+	.has-one-sidebar {
+		.l-content {
+			@include span-columns(8);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span-columns(4);
+
+			clear: right;
+		}
+	}
 }
 
-@include breakpoint($desk, true) {
-  .l-constrained {
-    width: 80%;
-  }
 
-  /* Sidebars */
-  .has-one-sidebar {
-    .l-content {
-      @include grid-span(8, 1);
-    }
-    .l-region--sidebar-first {
-      @include grid-span(4, 9);
-      clear: none;
-    }
-  }
-  .has-two-sidebars {
-    .l-content {
-      @include grid-span(6, 1);
-    }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include grid-span(3, 7);
-      clear: none;
-    }
-    .l-region--sidebar-second {
-      @include grid-span(3, 10);
-    }
-  }
+@include media($large-screen) {
+	.l-constrained {
+		width: 80%;
+	}
+
+	/* Sidebars */
+	.has-one-sidebar {
+		.l-content {
+			@include span-columns(8);
+		}
+
+		.l-region--sidebar-first {
+			@include span-columns(4);
+
+			@include omega();
+			clear: none;
+		}
+	}
+
+	.has-two-sidebars {
+		.l-content {
+			@include span-columns(6);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span-columns(3);
+
+			clear: none;
+		}
+
+		.l-region--sidebar-second {
+			@include span-columns(3);
+		}
+	}
 }
