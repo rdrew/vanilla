@@ -2,7 +2,8 @@
 
 $color-transparent:      transparent !default;
 
-$color-brand:            #333 !default;
+//$color-brand:            #333 !default;
+$color-brand:            #8c2004 !default;
 
 $color-x-light:          #fff !default;
 $color-light:            #f7f7f7 !default;
@@ -25,6 +26,23 @@ $color-positive:         $green !default;
 $color-information:      #007aa6 !default;
 
 $color-input-shadow:     rgba($color-x-dark, .12) !default;
+
+// Border
+//$base-border-color: $light-gray;
+$base-border-color: #adad97;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fffff8;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($color-brand-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
 
 // for _patterns_grid-list.scss
 $grid-border-style:      1px dotted $color-mid-light !default;
