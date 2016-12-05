@@ -1,0 +1,27 @@
+.site-branding {
+	&__logo {
+		float: left;
+		margin-right: 1rem * 2;
+
+		img {
+			width: 222px;
+		}
+	}
+
+	&__name {
+		@extend h1;
+
+		color: $color-dark;
+		margin: 0 0 .5rem;
+		display: block;
+
+		&:hover {
+			border-bottom: none;
+			color: $color-brand;
+		}
+	}
+
+	&__slogan {
+		margin: 0;
+	}
+}
